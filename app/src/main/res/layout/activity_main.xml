@@ -9,34 +9,30 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageViewCoin"
         android:layout_width="318dp"
-        android:layout_height="330dp"
+        android:layout_height="322dp"
         android:layout_marginEnd="-120dp"
         android:alpha="0.15"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.744"
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlExit"
+        app:layout_constraintStart_toStartOf="@id/vrMiddleGl"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlInput"
         app:srcCompat="@drawable/chinesecoin" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nameTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/cherry_cream_soda"
-        android:text="LEAP YEAR CALCULATOR"
+        android:text="LEAP YEAR\nCALCULATOR"
         android:textAlignment="center"
         android:textColor="#FF0000"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234" />
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlTitle"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlSide"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlSide"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlTitle" />
 
     <TextView
         android:id="@+id/isLeapOrNot"
@@ -46,12 +42,10 @@
         android:text="LEAP YEAR OR NOT"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlLeapYearNot"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlSide"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlSide"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlLeapYearNot" />
 
     <EditText
         android:id="@+id/editTextNumber"
@@ -62,12 +56,10 @@
         android:ems="10"
         android:inputType="number"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlInput"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlSide"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlSide"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlInput" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/calculateBtn"
@@ -77,12 +69,10 @@
         android:text="CALCULATE"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlCalClear"
+        app:layout_constraintEnd_toEndOf="@+id/vrMiddleGl"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlSide"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlCalClear" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/clearBtn"
@@ -92,12 +82,10 @@
         android:text="CLEAR"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlCalClear"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlSide"
+        app:layout_constraintStart_toStartOf="@+id/vrMiddleGl"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlCalClear" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/exitBtn"
@@ -107,34 +95,166 @@
         android:text="EXIT"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.834" />
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlExit"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlSide"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlSide"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlExit" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="317dp"
-        android:layout_height="185dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
+        android:id="@+id/treeBlossom"
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/bHrGlTitle"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlSide"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlEdge"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlSide"
         app:srcCompat="@drawable/sidetree" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="763dp"
-        android:layout_height="799dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34"
-        app:srcCompat="@drawable/redgb2" />
+        android:id="@+id/largeCoinBorder"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginRight="155dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tHrGlCalClear"
+        app:layout_constraintEnd_toEndOf="@+id/vrMiddleGl"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlEdge"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlSide"
+        app:srcCompat="@drawable/largecoin" />
+
+    <ImageView
+        android:id="@+id/borderDesign"
+        android:layout_width="860dp"
+        android:layout_height="85dp"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlEdge"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlEdge"
+        app:layout_constraintTop_toTopOf="@+id/bHrGlSide"
+        app:srcCompat="@drawable/coinborder" />
+
+    <!-- GUIDELINES -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lVrGlEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rVrGlEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vrMiddleGl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lVrGlSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.082"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rVrGlSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.918"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <!-- title guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.213"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.303" />
+
+    <!-- leap year or not guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlLeapYearNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlLeapYearNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.374" />
+
+    <!-- input field guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.433" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.564" />
+
+    <!-- buttons guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlCalClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.642" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlCalClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.715" />
+
+    <!-- exit button guideline -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.774" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.848" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
